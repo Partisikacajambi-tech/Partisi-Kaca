@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV. Partisi Kaca Jambi | Spesialis Pintu, Jendela Aluminium, Kanopi & Rangka Baja</title>
-    <meta name="description" content="Spesialis pembuatan dan pemasangan partisi kaca, pintu aluminium, jendela kaca, kusen aluminium, rangka baja ringan, kanopi di Jambi. Konsultasi & Pemesanan: 0853-4412-0212.">
-    <meta name="keywords" content="Partisi Kaca Jambi, Pintu Kaca Jambi, Jendela Aluminium Jambi, Kanopi Baja Ringan Jambi, Kusen Aluminium, Glass Partition Jambi">
+    <title>CV. PARTISI KACA JAMBI | Spesialis Pintu Kaca, Kusen Aluminium & Kanopi Baja Light</title>
+    <meta name="description" content="CV. PARTISI KACA JAMBI - Penyedia jasa pembuatan & pemasangan pintu kaca tempered, jendela aluminium, kusen aluminium, kanopi, rangka baja ringan di Jambi. Hubungi +62 853-4412-0212.">
+    <meta name="keywords" content="Partisi Kaca Jambi, Kusen Aluminium Jambi, Pintu Kaca Tempered, Jendela Aluminium, Kanopi Baja Ringan Jambi, Bengkel Kaca Jambi">
     
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -15,15 +15,13 @@
                 extend: {
                     colors: {
                         brand: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            500: '#0284c7',
-                            600: '#0369a1',
-                            700: '#075985',
-                            800: '#0c4a6e',
-                            900: '#0f172a',
-                        },
-                        glass: 'rgba(255, 255, 255, 0.85)'
+                            dark: '#0a0d12',
+                            card: '#121721',
+                            teal: '#008ca8',
+                            tealdark: '#006c82',
+                            gold: '#f5a623',
+                            goldhover: '#d98e16',
+                        }
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -32,891 +30,925 @@
             }
         }
     </script>
-    <!-- Google Fonts -->
+    
+    <!-- Google Fonts Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        .glass-card {
-            background: rgba(255, 255, 255, 0.75);
+        .glass-panel {
+            background: rgba(18, 23, 33, 0.85);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
-        .glass-dark {
-            background: rgba(15, 23, 42, 0.85);
+        .glass-panel-light {
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.08);
         }
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(2, 132, 199, 0.75) 100%);
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(10, 13, 18, 0.95), rgba(10, 13, 18, 0.75)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-gold selection:text-slate-900">
 
-    <!-- Top Header Bar -->
-    <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-tealdark via-brand-teal to-brand-tealdark text-white text-xs sm:text-sm py-2 px-4 shadow-md">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center space-x-4">
-                <a href="tel:+6285344120212" class="hover:text-brand-400 transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-phone text-brand-500"></i> +62 853-4412-0212
-                </a>
-                <span class="hidden md:inline text-slate-600">|</span>
-                <span class="hidden md:flex items-center gap-1.5 text-slate-400">
-                    <i class="fa-solid fa-location-dot text-brand-500"></i> Kota Jambi & Sekitarnya
-                </span>
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 font-medium"><i class="fa-solid fa-location-dot text-brand-gold"></i> Kota Jambi & Sekitarnya</span>
+                <span class="hidden md:inline text-slate-300">|</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-clock text-brand-gold"></i> Buka Setiap Hari: 08.00 - 18.00 WIB</span>
             </div>
-            <div class="flex items-center space-x-4">
-                <span class="text-slate-400 text-xs">Media Sosial Resmi:</span>
-                <a href="https://www.tiktok.com/@partisikaca.jambi?_r=1&_t=ZS-99Z8cEwbHyG" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition flex items-center gap-1" title="TikTok Official">
-                    <i class="fa-brands fa-tiktok"></i> <span class="hidden sm:inline">TikTok</span>
+            <div class="flex items-center gap-5">
+                <a href="tel:+6285344120212" class="hover:text-brand-gold transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-phone"></i> +62 853-4412-0212
                 </a>
-                <a href="https://www.instagram.com/partisikaca.jambi?stkn=MTJ0cTdkNXVrMTNhcg==" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition flex items-center gap-1" title="Instagram Official">
-                    <i class="fa-brands fa-instagram text-pink-500"></i> <span class="hidden sm:inline">Instagram</span>
-                </a>
+                <div class="flex items-center gap-3 border-l border-cyan-400/40 pl-4">
+                    <a href="https://www.tiktok.com/@partisikaca.jambi?_r=1&_t=ZS-99Z8cEwbHyG" target="_blank" rel="noopener" class="hover:text-brand-gold transition text-base" title="TikTok CV Partisi Kaca Jambi">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/partisikaca.jambi?stkn=MTJ0cTdkNXVrMTNhcg==" target="_blank" rel="noopener" class="hover:text-brand-gold transition text-base" title="Instagram CV Partisi Kaca Jambi">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Main Navigation Bar -->
-    <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-200/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <!-- Brand Logo -->
-                <a href="#" class="flex items-center space-x-3 group">
-                    <!-- Ganti 'logo.png' dengan nama file logo Anda di GitHub atau link URL logo -->
-                    <img src="logo.png" alt="CV. Partisi Kaca Jambi" class="h-12 w-auto object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('fallback-logo-nav').style.display='flex';">
-                    
-                    <!-- Logo Cadangan (Ikon) jika file logo.png belum diunggah -->
-                    <div id="fallback-logo-nav" class="hidden w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-700 to-cyan-500 items-center justify-center text-white shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform duration-300">
-                        <i class="fa-solid fa-border-all text-2xl"></i>
-                    </div>
-                    <div>
-                        <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 block leading-none">CV. PARTISI KACA</span>
-                        <span class="text-xs font-semibold tracking-widest text-brand-600 uppercase">Jambi • Glass & Aluminium</span>
-                    </div>
+    <!-- Navbar Header -->
+    <header class="sticky top-0 z-40 bg-brand-dark/90 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <!-- Recreated SVG Logo of CV PARTISI KACA JAMBI -->
+                <svg viewBox="0 0 400 400" class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 transition group-hover:scale-105" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer Cyan Ring -->
+                    <circle cx="200" cy="200" r="188" fill="#0b0e14" stroke="#008ca8" stroke-width="14"/>
+                    <!-- Yellow House 'P' Graphic -->
+                    <g transform="translate(0, -10)">
+                        <path d="M 200 65 L 275 125 L 258 138 L 258 190 L 202 232 L 160 200 L 160 260 L 200 290 L 200 340 L 140 295 L 140 138 L 125 125 Z" fill="#f5a623"/>
+                        <!-- Inner Window -->
+                        <rect x="182" y="118" width="36" height="36" fill="#a0d2e0" stroke="#f5a623" stroke-width="4" rx="2"/>
+                        <line x1="200" y1="118" x2="200" y2="154" stroke="#f5a623" stroke-width="3"/>
+                        <line x1="182" y1="136" x2="218" y2="136" stroke="#f5a623" stroke-width="3"/>
+                    </g>
+                    <!-- Brand Text inside Circle -->
+                    <text x="200" y="310" font-family="'Inter', sans-serif" font-weight="900" font-size="22" fill="#f5a623" text-anchor="middle" letter-spacing="1">CV PARTISI KACA</text>
+                    <text x="200" y="348" font-family="'Inter', sans-serif" font-weight="900" font-size="24" fill="#ffffff" text-anchor="middle" letter-spacing="9">JAMBI</text>
+                </svg>
+
+                <div class="flex flex-col">
+                    <span class="text-lg sm:text-xl font-extrabold tracking-tight text-white leading-tight">
+                        CV. PARTISI KACA <span class="text-brand-gold">JAMBI</span>
+                    </span>
+                    <span class="text-xs text-slate-400 font-medium">Aplikator Kaca, Aluminium & Rangka Baja</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+                <a href="#beranda" class="text-brand-gold hover:text-brand-gold transition">Beranda</a>
+                <a href="#layanan" class="text-slate-300 hover:text-brand-gold transition">Layanan</a>
+                <a href="#galeri" class="text-slate-300 hover:text-brand-gold transition">Galeri Proyek</a>
+                <a href="#kalkulator" class="text-slate-300 hover:text-brand-gold transition">Estimasi Biaya</a>
+                <a href="#keunggulan" class="text-slate-300 hover:text-brand-gold transition">Keunggulan</a>
+                <a href="#kontak" class="text-slate-300 hover:text-brand-gold transition">Kontak</a>
+            </nav>
+
+            <!-- CTA Call Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20ingin%20konsultasi%20pembuatan%20dan%20pemasangan" 
+                   target="_blank"
+                   class="bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-500 hover:to-green-400 text-white font-bold px-4 py-2.5 rounded-full text-sm shadow-lg shadow-green-900/30 flex items-center gap-2 transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Pesan via WA</span>
                 </a>
+            </div>
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8 font-medium text-slate-700">
-                    <a href="#beranda" class="hover:text-brand-600 transition">Beranda</a>
-                    <a href="#layanan" class="hover:text-brand-600 transition">Layanan</a>
-                    <a href="#galeri" class="hover:text-brand-600 transition">Galeri Proyek</a>
-                    <a href="#kalkulator" class="hover:text-brand-600 transition">Estimasi Biaya</a>
-                    <a href="#keunggulan" class="hover:text-brand-600 transition">Keunggulan</a>
-                    <a href="#kontak" class="hover:text-brand-600 transition">Kontak</a>
-                </div>
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="lg:hidden text-slate-200 hover:text-white p-2 rounded-lg focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+            </button>
+        </div>
 
-                <!-- CTA Button -->
-                <div class="hidden md:flex items-center">
-                    <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20ingin%20konsultasi%20mengenai%20pemasangan..." target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full font-semibold shadow-md shadow-emerald-600/20 hover:shadow-lg transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
-                        <span>Pesan via WA</span>
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobileMenuBtn" class="text-slate-700 hover:text-brand-600 focus:outline-none p-2" aria-label="Toggle Navigation">
-                        <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
-                    </button>
-                </div>
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileDrawer" class="hidden lg:hidden bg-brand-card border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#beranda" class="mobile-link block text-brand-gold font-semibold py-2">Beranda</a>
+            <a href="#layanan" class="mobile-link block text-slate-200 hover:text-brand-gold font-semibold py-2">Layanan Utama</a>
+            <a href="#galeri" class="mobile-link block text-slate-200 hover:text-brand-gold font-semibold py-2">Galeri Pemasangan</a>
+            <a href="#kalkulator" class="mobile-link block text-slate-200 hover:text-brand-gold font-semibold py-2">Kalkulator Estimasi</a>
+            <a href="#keunggulan" class="mobile-link block text-slate-200 hover:text-brand-gold font-semibold py-2">Keunggulan Kami</a>
+            <a href="#kontak" class="mobile-link block text-slate-200 hover:text-brand-gold font-semibold py-2">Kontak & Lokasi</a>
+            <div class="pt-2 border-t border-slate-800 flex flex-col gap-2">
+                <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20ingin%20tanya%20proyek" 
+                   target="_blank"
+                   class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Hubungi WhatsApp (+62 853-4412-0212)
+                </a>
             </div>
         </div>
-
-        <!-- Mobile Menu Drawer -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
-            <a href="#beranda" class="block py-2 text-slate-700 font-medium hover:text-brand-600 border-b border-slate-100">Beranda</a>
-            <a href="#layanan" class="block py-2 text-slate-700 font-medium hover:text-brand-600 border-b border-slate-100">Layanan</a>
-            <a href="#galeri" class="block py-2 text-slate-700 font-medium hover:text-brand-600 border-b border-slate-100">Galeri Proyek</a>
-            <a href="#kalkulator" class="block py-2 text-slate-700 font-medium hover:text-brand-600 border-b border-slate-100">Estimasi Biaya</a>
-            <a href="#keunggulan" class="block py-2 text-slate-700 font-medium hover:text-brand-600 border-b border-slate-100">Keunggulan</a>
-            <a href="#kontak" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Kontak Us</a>
-            <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20ingin%20konsultasi..." target="_blank" class="w-full mt-2 bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 shadow-md">
-                <i class="fa-brands fa-whatsapp text-xl"></i> Chat WhatsApp Now
-            </a>
-        </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="beranda" class="relative bg-slate-900 text-white min-h-[85vh] flex items-center overflow-hidden">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" 
-                 alt="Partisi Kaca dan Aluminium Jambi" 
-                 class="w-full h-full object-cover opacity-30"
-                 onerror="this.src='https://placehold.co/1920x1080/0f172a/ffffff?text=CV.+Partisi+Kaca+Jambi'">
-            <div class="absolute inset-0 hero-gradient"></div>
-        </div>
+    <section id="beranda" class="hero-bg relative min-h-[85vh] flex items-center py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6 text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-teal/20 border border-brand-teal/40 text-cyan-300 text-xs sm:text-sm font-semibold tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
+                    Jasa Spesialis Pemasangan Terpercaya di Kota Jambi
+                </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/20 border border-brand-400/30 text-cyan-300 text-xs sm:text-sm font-semibold tracking-wide">
-                        <i class="fa-solid fa-shield-halved"></i> Terpercaya & Bergaransi di Kota Jambi
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Spesialis <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-amber-300 to-yellow-500">Partisi Kaca</span>, Kusen Aluminium & Kanopi Baja Light
+                </h1>
+
+                <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+                    Kami melayani pembuatan & pemasangan pintu kaca tempered, jendela aluminium, kusen minimalis, partisi ruangan, kanopi baja ringan, hingga fasad bangunan untuk rumah, toko, ruko, dan kantor di wilayah Jambi dengan pengerjaan rapi & bergaransi.
+                </p>
+
+                <!-- Hero Features Checkmarks -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm font-semibold text-slate-200">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-base"></i> Kaca Tempered SNI
                     </div>
-                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                        Solusi Partisi Kaca & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-brand-300">Kusen Aluminium</span> Modern
-                    </h1>
-                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                        Kami melayani pembuatan & instalasi profesional untuk pintu kaca tempered, jendela aluminium, kanopi baja ringan, pintu kusen, railing, dan fasad toko/gedung berkualitas presisi tinggi.
-                    </p>
-                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20tertarik%20untuk%20konsultasi%20proyek..." target="_blank" rel="noopener" class="bg-gradient-to-r from-brand-500 to-cyan-500 hover:from-brand-600 hover:to-cyan-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-cyan-500/20 transition transform hover:-translate-y-1 flex items-center justify-center gap-3">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i> Konsultasi Gratis
-                        </a>
-                        <a href="#galeri" class="bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700 px-8 py-4 rounded-xl font-semibold text-lg transition flex items-center justify-center gap-2 backdrop-blur-sm">
-                            <i class="fa-solid fa-images"></i> Lihat Galeri Hasil
-                        </a>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-base"></i> Aluminium Presisi
                     </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-base"></i> Rangka Baja Kokoh
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-base"></i> Tukang Berpengalaman
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-base"></i> Garansi Pemasangan
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-base"></i> Gratis Survei Lokasi
+                    </div>
+                </div>
+
+                <!-- Call to Action Buttons -->
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20ingin%20konsultasi%20gratis" 
+                       target="_blank"
+                       class="bg-gradient-to-r from-brand-gold to-amber-500 hover:from-amber-400 hover:to-brand-gold text-slate-950 font-extrabold px-7 py-3.5 rounded-xl shadow-lg shadow-amber-500/20 text-base flex items-center gap-3 transition transform hover:-translate-y-1">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Konsultasi Gratis WA</span>
+                    </a>
                     
-                    <!-- Quick Stats -->
-                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
-                        <div>
-                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">500+</p>
-                            <p class="text-xs sm:text-sm text-slate-400">Proyek Selesai</p>
-                        </div>
-                        <div>
-                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">100%</p>
-                            <p class="text-xs sm:text-sm text-slate-400">Kaca Tempered SNI</p>
-                        </div>
-                        <div>
-                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">Bergaransi</p>
-                            <p class="text-xs sm:text-sm text-slate-400">Pengerjaan Rapi</p>
-                        </div>
-                    </div>
+                    <a href="#galeri" 
+                       class="bg-slate-800/80 hover:bg-slate-700 text-white font-bold px-6 py-3.5 rounded-xl border border-slate-700 text-base flex items-center gap-2 transition">
+                        <i class="fa-solid fa-images text-brand-teal"></i>
+                        <span>Lihat Hasil Proyek</span>
+                    </a>
                 </div>
+            </div>
 
-                <!-- Floating Card / Mini Form Header -->
-                <div class="lg:col-span-5">
-                    <div class="glass-dark p-6 sm:p-8 rounded-3xl shadow-2xl space-y-5">
-                        <div class="border-b border-slate-700/80 pb-4">
-                            <h3 class="text-xl font-bold text-white flex items-center gap-2">
-                                <i class="fa-solid fa-calculator text-brand-400"></i> Tanya Penawaran Harga
-                            </h3>
-                            <p class="text-xs text-slate-400 mt-1">Dapatkan estimasi biaya pengerjaan cepat untuk area Jambi & sekitarnya.</p>
+            <!-- Hero Floating Highlight Card -->
+            <div class="lg:col-span-5">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-2xl relative border border-slate-700/60">
+                    <div class="absolute -top-4 -right-4 bg-brand-teal text-white font-bold text-xs uppercase px-4 py-1.5 rounded-full shadow-lg">
+                        Layanan Unggulan
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-brand-gold"></i> Mengapa CV. Partisi Kaca Jambi?
+                    </h3>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-3 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-brand-teal/20 border border-brand-teal/40 flex items-center justify-center shrink-0 text-brand-teal">
+                                <i class="fa-solid fa-door-open text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Pintu & Partisi Kaca Modern</h4>
+                                <p class="text-xs text-slate-400">Pintu fitting tempered, sliding door, tempered frameless untuk ruko, toko, & rumah.</p>
+                            </div>
                         </div>
-                        
-                        <form id="heroQuickForm" onsubmit="handleQuickSubmit(event)" class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-300 mb-1">Nama Lengkap</label>
-                                <input type="text" id="quickName" required placeholder="Contoh: Pak Budi" class="w-full bg-slate-900/90 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-500">
+
+                        <div class="flex items-start gap-4 p-3 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0 text-brand-gold">
+                                <i class="fa-solid fa-border-all text-lg"></i>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-300 mb-1">Jenis Pekerjaan</label>
-                                <select id="quickService" class="w-full bg-slate-900/90 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-500">
-                                    <option value="Partisi & Pintu Kaca Tempered">Partisi & Pintu Kaca Tempered</option>
-                                    <option value="Jendela Aluminium & Kusen">Jendela Aluminium & Kusen</option>
-                                    <option value="Kanopi & Rangka Baja Ringan">Kanopi & Rangka Baja Ringan</option>
-                                    <option value="Pintu Sliding Aluminium">Pintu Sliding / Lipat Aluminium</option>
-                                    <option value="Lainnya">Proyek Custom / Lainnya</option>
-                                </select>
+                                <h4 class="font-bold text-white text-sm">Kusen & Jendela Aluminium</h4>
+                                <p class="text-xs text-slate-400">Menggunakan merek berkualitas (Alexindo, YKK, Dacon, Forta) tahan karat & presisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-3 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center shrink-0 text-cyan-400">
+                                <i class="fa-solid fa-house-chimney-window text-lg"></i>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-300 mb-1">Lokasi Proyek (Kecamatan/Kota)</label>
-                                <input type="text" id="quickLocation" required placeholder="Contoh: Telanaipura, Jambi" class="w-full bg-slate-900/90 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-500">
+                                <h4 class="font-bold text-white text-sm">Rangka Baja Light & Kanopi</h4>
+                                <p class="text-xs text-slate-400">Kanopi kaca, solarflat, alderon, spandek, & konstruksi baja ringan tahan iklim Jambi.</p>
                             </div>
-                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-lg shadow-lg shadow-emerald-600/30 transition flex items-center justify-center gap-2 text-sm">
-                                <i class="fa-brands fa-whatsapp text-lg"></i> Kirim via WhatsApp
-                            </button>
-                        </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact badge inside hero card -->
+                    <div class="mt-6 pt-5 border-t border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Pemesanan Langsung</p>
+                                <p class="text-sm font-bold text-white">+62 853-4412-0212</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6285344120212" target="_blank" class="text-xs font-bold text-brand-gold hover:underline">Chat Sekarang &rarr;</a>
                     </div>
                 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Counter Bar -->
+    <section class="bg-brand-card border-y border-slate-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800">
+                <span class="block text-3xl sm:text-4xl font-extrabold text-brand-gold mb-1">500+</span>
+                <span class="text-xs sm:text-sm text-slate-400 font-medium">Proyek Terpasang</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800">
+                <span class="block text-3xl sm:text-4xl font-extrabold text-brand-teal mb-1">100%</span>
+                <span class="text-xs sm:text-sm text-slate-400 font-medium">Garansi Rapih & Presisi</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800">
+                <span class="block text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">10+</span>
+                <span class="text-xs sm:text-sm text-slate-400 font-medium">Tahun Pengalaman</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800">
+                <span class="block text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">Kota Jambi</span>
+                <span class="text-xs sm:text-sm text-slate-400 font-medium">& Seluruh Kabupaten</span>
             </div>
         </div>
     </section>
 
-    <!-- Layanan Kami Section -->
-    <section id="layanan" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold text-brand-600 tracking-wider uppercase mb-2">Layanan Lengkap</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                    Spesialis Pengerjaan Kaca, Aluminium & Rangka Konstruksi
-                </p>
-                <div class="w-20 h-1.5 bg-brand-500 mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-600 mt-4 text-sm sm:text-base">
-                    Menggunakan bahan berkualitas tinggi, pengerjaan rapi, presisi, serta dikerjakan oleh teknisi berpengalaman di Jambi.
-                </p>
+    <!-- Services Section -->
+    <section id="layanan" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-gold text-sm font-bold uppercase tracking-wider">Layanan Profesional Kami</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">
+                Solusi Lengkap Kaca, Aluminium & Konstruksi Baja di Jambi
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base">
+                Kami melayani segalanya mulai dari perencanaan, pengukuran lokasi, perakitan, hingga pemasangan final dengan standar keamanan tinggi.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service Card 1 -->
+            <div class="bg-brand-card rounded-3xl p-6 border border-slate-800 hover:border-brand-teal/50 transition duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/20 text-brand-teal border border-brand-teal/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-door-closed"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pintu Kaca & Partisi Kaca</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pembuatan pintu kaca tempered frameless, pintu lipat kaca, sliding door kaca, partisi ruangan kantor, shower screen kamar mandi, dan spider glass system.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Kaca Tempered 8mm, 10mm, 12mm</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Engsel Floor Hinge Bergaransi</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Desain Minimalis & Elegant</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/6285344120212?text=Saya%20ingin%20tanya%20mengenai%20Pintu%20Kaca%20dan%20Partisi" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-slate-800 hover:bg-brand-teal text-white font-semibold text-sm transition">
+                    Tanya Layanan Ini
+                </a>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition duration-300 group">
-                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-door-open text-2xl"></i>
+            <!-- Service Card 2 -->
+            <div class="bg-brand-card rounded-3xl p-6 border border-slate-800 hover:border-brand-gold/50 transition duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/20 text-brand-gold border border-amber-500/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-border-all"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pintu Kaca & Partisi</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Pemasangan pintu kaca frameless, tempered glass 8mm - 12mm, partisi kaca kantor, shower box, pintu floorhinge, dan sliding glass door.
+                    <h3 class="text-xl font-bold text-white mb-3">Kusen & Jendela Aluminium</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pembuatan kusen aluminium 3 inch & 4 inch, jendela casement, jendela sliding, jendela jungkit, serta frame partisi alumunium untuk ruko & rumah tinggal.
                     </p>
-                    <ul class="text-xs text-slate-500 space-y-2 mb-4">
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Kaca Tempered Standar SNI</li>
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Aksesoris Staintless Steel Anti Karat</li>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Pilihan Warna: Hitam, Putih, Cokelat, Urat Kayu</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Anti Rayap & Tahan Cuaca Tropis</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Kedap Suara & Rapi</li>
                     </ul>
                 </div>
-
-                <!-- Service 2 -->
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition duration-300 group">
-                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-table-cells text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Jendela & Kusen Aluminium</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Pembuatan kusen aluminium Alexindo, Forta, Dacon, dll. Jendela casement, jendela swing, sliding window, serta pintu lipat aluminium modern.
-                    </p>
-                    <ul class="text-xs text-slate-500 space-y-2 mb-4">
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Pilihan Warna: White, Black, Brown, Silver</li>
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Tahan Rayap, Air, dan Cuaca Ekstrem</li>
-                    </ul>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition duration-300 group">
-                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-warehouse text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Kanopi & Rangka Baja Ringan</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Konstruksi kanopi carport, teras rumah, dan rangka atap baja ringan dengan berbagai pilihan atap (Solarflat, Alderon, Spandek, Polycarbonate).
-                    </p>
-                    <ul class="text-xs text-slate-500 space-y-2 mb-4">
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Struktur Kuat & Kokoh</li>
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Pengerjaan Cepat & Rapi</li>
-                    </ul>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition duration-300 group">
-                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-store text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Fasad & Etalase Toko</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Pembuatan etalase kaca custom untuk ruko, counter hp, cafe, booth pameran, serta Curtain Wall ACP (Aluminium Composite Panel) fasad gedung.
-                    </p>
-                    <ul class="text-xs text-slate-500 space-y-2 mb-4">
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Desain Elegan & Komersial</li>
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Custom Ukuran & Layout</li>
-                    </ul>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition duration-300 group">
-                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-stairs text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Railing Kaca & Balkon</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Railing tangga kaca, balkon kaca tempered dengan handrail stainless steel atau kayu, memberikan kesan mewah dan lapang pada hunian.
-                    </p>
-                    <ul class="text-xs text-slate-500 space-y-2 mb-4">
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Keamanan Tinggi & Estetis</li>
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Finishing Premium</li>
-                    </ul>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition duration-300 group">
-                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-wrench text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Service & Re-Fitting Kaca</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Jasa perbaikan floorhinge pintu kaca macet, ganti engsel aluminium, bongkar pasang partisi kaca kantor, dan penggantian sealent.
-                    </p>
-                    <ul class="text-xs text-slate-500 space-y-2 mb-4">
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Respon Cepat</li>
-                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i>Penyelesaian Masalah Presisi</li>
-                    </ul>
-                </div>
+                <a href="https://wa.me/6285344120212?text=Saya%20ingin%20tanya%20mengenai%20Kusen%20dan%20Jendela%20Aluminium" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-slate-800 hover:bg-brand-gold hover:text-slate-950 text-white font-semibold text-sm transition">
+                    Tanya Layanan Ini
+                </a>
             </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-brand-card rounded-3xl p-6 border border-slate-800 hover:border-cyan-500/50 transition duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Kanopi & Rangka Baja Light</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Konstruksi kanopi rumah/carport dengan atap Alderon, kaca tempered, solarflat, spandek, serta pemasangan rangka atap baja ringan berstandar tinggi.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Struktur Baja Ringan Anti Karat</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Kanopi Kaca Modern Luxury</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Pemasangan Kokoh & Aman</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/6285344120212?text=Saya%20ingin%20tanya%20mengenai%20Kanopi%20dan%20Rangka%20Baja" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-slate-800 hover:bg-cyan-600 text-white font-semibold text-sm transition">
+                    Tanya Layanan Ini
+                </a>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="bg-brand-card rounded-3xl p-6 border border-slate-800 hover:border-brand-teal/50 transition duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/20 text-indigo-400 border border-indigo-500/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Fasad Kaca & Curtain Wall</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pemasangan curtain wall & ACP (Aluminium Composite Panel) untuk tampilan eksterior ruko, gedung, hotel, dan fasad toko serba modern.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Kaca Stopsol / Heat Reflective</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Kombinasi ACP Elegan</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/6285344120212?text=Saya%20ingin%20tanya%20mengenai%20Fasad%20Kaca%20Curtain%20Wall" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-slate-800 hover:bg-brand-teal text-white font-semibold text-sm transition">
+                    Tanya Layanan Ini
+                </a>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="bg-brand-card rounded-3xl p-6 border border-slate-800 hover:border-emerald-500/50 transition duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-shower"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Shower Screen & Cermin Cermin</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pemasangan sekat kaca kamar mandi (shower enclosure), kaca beveled dekoratif, cermin dinding gym, salon, & ruang tamu.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Aksesoris Stainless Steel 304 Anti Karat</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Cermin Beveled Custom Size</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/6285344120212?text=Saya%20ingin%20tanya%20mengenai%20Shower%20Screen%20Kaca" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-slate-800 hover:bg-emerald-600 text-white font-semibold text-sm transition">
+                    Tanya Layanan Ini
+                </a>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="bg-brand-card rounded-3xl p-6 border border-slate-800 hover:border-pink-500/50 transition duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/20 text-pink-400 border border-pink-500/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Servis & Perbaikan Kaca / Aluminium</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Jasa penggantian engsel floor hinge yang rusak, perbaikan pintu kaca macet, bongkar pasang partisi kaca, & pergantian kaca pecah.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Pengerjaan Cepat & Bergaransi</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Sparepart Lengkap Original</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/6285344120212?text=Saya%20membutuhkan%20Jasa%20Servis%20Perbaikan%20Kaca/Aluminium" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-slate-800 hover:bg-pink-600 text-white font-semibold text-sm transition">
+                    Tanya Layanan Ini
+                </a>
+            </div>
+
         </div>
     </section>
 
-    <!-- Galeri Proyek Section -->
-    <section id="galeri" class="py-20 bg-slate-900 text-white">
+    <!-- Gallery Section -->
+    <section id="galeri" class="py-20 bg-slate-900/60 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-xs font-bold text-cyan-400 tracking-wider uppercase mb-2">Dokumentasi Pekerjaan</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">Galeri Hasil Pemasangan Proyek</p>
-                <div class="w-20 h-1.5 bg-brand-500 mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-400 mt-4 text-sm">
-                    Berikut adalah bukti dokumentasi pemasangan nyata oleh tim **CV. Partisi Kaca Jambi** di berbagai proyek rumah tinggal, ruko, kantor, dan fasilitas umum.
+            
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-brand-teal text-sm font-bold uppercase tracking-wider">Portofolio Hasil Kerja</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">
+                    Foto-Foto Pemasangan CV. Partisi Kaca Jambi
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Dokumentasi riil pemasangan pintu kaca, kusen aluminium, jendela kaca, dan kanopi rangka baja ringan di lokasi klien.
                 </p>
             </div>
 
             <!-- Filter Buttons -->
-            <div class="flex flex-wrap justify-center gap-2 mb-10" id="galleryFilters">
-                <button onclick="filterGallery('all')" class="gallery-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-600 text-white hover:bg-brand-500 transition">
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="galleryFilterButtons">
+                <button data-filter="all" class="gallery-btn active bg-brand-gold text-slate-950 font-bold px-5 py-2 rounded-full text-xs sm:text-sm transition">
                     Semua Foto
                 </button>
-                <button onclick="filterGallery('kaca')" class="gallery-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-slate-800 text-slate-300 hover:bg-brand-600 hover:text-white transition">
-                    Pintu & Partisi Kaca
+                <button data-filter="pintu-kaca" class="gallery-btn bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-5 py-2 rounded-full text-xs sm:text-sm transition">
+                    Pintu & Jendela Kaca
                 </button>
-                <button onclick="filterGallery('kusen')" class="gallery-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-slate-800 text-slate-300 hover:bg-brand-600 hover:text-white transition">
-                    Kusen & Jendela Aluminium
+                <button data-filter="kusen-aluminium" class="gallery-btn bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-5 py-2 rounded-full text-xs sm:text-sm transition">
+                    Kusen Aluminium
                 </button>
-                <button onclick="filterGallery('kanopi')" class="gallery-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-slate-800 text-slate-300 hover:bg-brand-600 hover:text-white transition">
-                    Kanopi & Rangka Baja
+                <button data-filter="kanopi-baja" class="gallery-btn bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-5 py-2 rounded-full text-xs sm:text-sm transition">
+                    Rangka Baja & Kanopi
                 </button>
             </div>
 
             <!-- Gallery Grid -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
                 
-                <!-- Item 1: Partisi Kaca -->
-                <div class="gallery-item kaca group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700/60 shadow-lg cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80', 'Pemasangan Partisi Kaca Tempered Kantor')">
-                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80" 
-                         alt="Partisi Kaca Tempered Jambi" 
-                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
-                         onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Partisi+Kaca+Tempered'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-0 p-5 w-full">
-                        <span class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Partisi Kaca</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Partisi Kaca Tempered Kantor</h4>
-                        <p class="text-xs text-slate-300 mt-1">Pemasangan Rapi Frameless di Telanaipura, Jambi</p>
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item pintu-kaca bg-brand-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-brand-teal transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Pintu Kaca Tempered Frame" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                        <span class="absolute top-3 left-3 bg-brand-teal text-white text-xs font-bold px-3 py-1 rounded-md">Pintu & Partisi Kaca</span>
+                        <button onclick="openLightbox('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', 'Pemasangan Pintu Kaca Tempered Frameless Ruko Jambi')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/80 text-white flex items-center justify-center hover:bg-brand-gold hover:text-slate-950 transition">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="font-bold text-white text-base">Pintu Kaca Tempered Frameless Floor Hinge</h3>
+                            <p class="text-xs text-slate-300 flex items-center gap-1 mt-1"><i class="fa-solid fa-location-dot text-brand-gold"></i> Area Telanaipura, Kota Jambi</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item 2: Kanopi Baja Ringan -->
-                <div class="gallery-item kanopi group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700/60 shadow-lg cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1628744876497-eb30460be9f6?auto=format&fit=crop&w=1200&q=80', 'Kanopi Carport Rangka Baja Ringan & Solarflat')">
-                    <img src="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?auto=format&fit=crop&w=600&q=80" 
-                         alt="Kanopi Baja Ringan Jambi" 
-                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
-                         onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Kanopi+Rangka+Baja'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-0 p-5 w-full">
-                        <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Kanopi & Rangka Baja</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Kanopi Carport Minimalis</h4>
-                        <p class="text-xs text-slate-300 mt-1">Konstruksi Baja Ringan Kokoh dengan Atap Alderon</p>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item kusen-aluminium bg-brand-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-brand-gold transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Kusen Aluminium Hitam Minimalis" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-md">Kusen Aluminium</span>
+                        <button onclick="openLightbox('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', 'Kusen & Jendela Aluminium Hitam Minimalis')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/80 text-white flex items-center justify-center hover:bg-brand-gold hover:text-slate-950 transition">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="font-bold text-white text-base">Jendela & Kusen Aluminium Hitam Anodized</h3>
+                            <p class="text-xs text-slate-300 flex items-center gap-1 mt-1"><i class="fa-solid fa-location-dot text-brand-gold"></i> Perumahan Mayang Mangurai, Jambi</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item 3: Kusen & Jendela Aluminium -->
-                <div class="gallery-item kusen group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700/60 shadow-lg cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?auto=format&fit=crop&w=1200&q=80', 'Pemasangan Kusen & Jendela Aluminium Hitam')">
-                    <img src="https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?auto=format&fit=crop&w=600&q=80" 
-                         alt="Jendela Aluminium Jambi" 
-                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
-                         onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Jendela+Aluminium'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-0 p-5 w-full">
-                        <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Kusen Aluminium</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Jendela Casement Aluminium</h4>
-                        <p class="text-xs text-slate-300 mt-1">Warna Anodized Black untuk Perumahan Modern</p>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item kanopi-baja bg-brand-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-cyan-500 transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Kanopi Rangka Baja Light" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <span class="absolute top-3 left-3 bg-cyan-600 text-white text-xs font-bold px-3 py-1 rounded-md">Kanopi & Baja Ringan</span>
+                        <button onclick="openLightbox('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80', 'Kanopi Carport Kaca & Frame Baja')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/80 text-white flex items-center justify-center hover:bg-brand-gold hover:text-slate-950 transition">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="font-bold text-white text-base">Kanopi Carport Rangka Baja Ringan Atap Alderon</h3>
+                            <p class="text-xs text-slate-300 flex items-center gap-1 mt-1"><i class="fa-solid fa-location-dot text-brand-gold"></i> Kota Baru, Jambi</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item 4: Pintu Kaca Floorhinge -->
-                <div class="gallery-item kaca group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700/60 shadow-lg cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', 'Pintu Kaca Utama Ruko & Toko')">
-                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" 
-                         alt="Pintu Kaca Ruko Jambi" 
-                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
-                         onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Pintu+Kaca+Floorhinge'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-0 p-5 w-full">
-                        <span class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Partisi Kaca</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Pintu Kaca Floorhinge 12mm</h4>
-                        <p class="text-xs text-slate-300 mt-1">Inlet Kaca Tempered Ruko Sipin Jambi</p>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item pintu-kaca bg-brand-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-brand-teal transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Partisi Kaca Ruangan Kantor" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <span class="absolute top-3 left-3 bg-brand-teal text-white text-xs font-bold px-3 py-1 rounded-md">Pintu & Partisi Kaca</span>
+                        <button onclick="openLightbox('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80', 'Partisi Kaca Tempered Kantor')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/80 text-white flex items-center justify-center hover:bg-brand-gold hover:text-slate-950 transition">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="font-bold text-white text-base">Partisi Kaca Tempered Ruang Rapat Kantor</h3>
+                            <p class="text-xs text-slate-300 flex items-center gap-1 mt-1"><i class="fa-solid fa-location-dot text-brand-gold"></i> Jelutung, Jambi</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item 5: Pintu Sliding Aluminium -->
-                <div class="gallery-item kusen group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700/60 shadow-lg cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80', 'Pintu Geser Sliding Aluminium Teras Belakang')">
-                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80" 
-                         alt="Pintu Sliding Aluminium Jambi" 
-                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
-                         onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Pintu+Sliding+Aluminium'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-0 p-5 w-full">
-                        <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Kusen Aluminium</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Pintu Sliding Aluminium Frame</h4>
-                        <p class="text-xs text-slate-300 mt-1">Akses Teras Belakang Rumah Elegan</p>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item kusen-aluminium bg-brand-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-brand-gold transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Jendela Sliding Aluminium" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-md">Kusen Aluminium</span>
+                        <button onclick="openLightbox('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80', 'Pintu Geser Aluminium Frame Putih')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/80 text-white flex items-center justify-center hover:bg-brand-gold hover:text-slate-950 transition">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="font-bold text-white text-base">Pintu Sliding Aluminium Frame Putih Alexindo</h3>
+                            <p class="text-xs text-slate-300 flex items-center gap-1 mt-1"><i class="fa-solid fa-location-dot text-brand-gold"></i> Sipin, Jambi</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item 6: Kanopi Baja Ringan Cafe -->
-                <div class="gallery-item kanopi group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700/60 shadow-lg cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80', 'Rangka Atap Baja Ringan & Kanopi Cafe Outdoor')">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" 
-                         alt="Rangka Baja Ringan Jambi" 
-                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
-                         onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Rangka+Baja+Kanopi'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-0 p-5 w-full">
-                        <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Kanopi & Rangka Baja</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Rangka Atap Baja Ringan Cafe</h4>
-                        <p class="text-xs text-slate-300 mt-1">Area Outdoor Cafe Kotabaru Jambi</p>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item kanopi-baja bg-brand-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-cyan-500 transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Konstruksi Rangka Baja Atap" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <span class="absolute top-3 left-3 bg-cyan-600 text-white text-xs font-bold px-3 py-1 rounded-md">Kanopi & Baja Ringan</span>
+                        <button onclick="openLightbox('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80', 'Rangka Atap Baja Ringan Gudang')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-900/80 text-white flex items-center justify-center hover:bg-brand-gold hover:text-slate-950 transition">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="font-bold text-white text-base">Konstruksi Rangka Atap Baja Ringan Presisi</h3>
+                            <p class="text-xs text-slate-300 flex items-center gap-1 mt-1"><i class="fa-solid fa-location-dot text-brand-gold"></i> Muaro Jambi</p>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Social Media Gallery Callout -->
-            <div class="mt-12 text-center bg-slate-800/60 rounded-2xl p-6 border border-slate-700/80 max-w-2xl mx-auto">
-                <p class="text-sm text-slate-300 mb-3">Lihat video proses pengerjaan lengkap dan pembaruan hasil proyek terbaru di media sosial kami:</p>
+            <!-- More Projects Notice -->
+            <div class="mt-12 text-center">
+                <p class="text-slate-400 text-sm mb-4">Ingin melihat lebih banyak sampel proyek terbaru & video pengerjaan kami?</p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="https://www.tiktok.com/@partisikaca.jambi?_r=1&_t=ZS-99Z8cEwbHyG" target="_blank" rel="noopener" class="bg-black hover:bg-slate-900 border border-slate-700 text-white px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition">
-                        <i class="fa-brands fa-tiktok text-cyan-400"></i> TikTok @partisikaca.jambi
+                    <a href="https://www.tiktok.com/@partisikaca.jambi?_r=1&_t=ZS-99Z8cEwbHyG" target="_blank" rel="noopener" class="bg-black hover:bg-slate-800 text-white border border-slate-700 font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm flex items-center gap-2 transition">
+                        <i class="fa-brands fa-tiktok text-lg"></i> Tonton di TikTok
                     </a>
-                    <a href="https://www.instagram.com/partisikaca.jambi?stkn=MTJ0cTdkNXVrMTNhcg==" target="_blank" rel="noopener" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 text-white px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition">
-                        <i class="fa-brands fa-instagram"></i> Instagram @partisikaca.jambi
+                    <a href="https://www.instagram.com/partisikaca.jambi?stkn=MTJ0cTdkNXVrMTNhcg==" target="_blank" rel="noopener" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 text-white font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm flex items-center gap-2 transition">
+                        <i class="fa-brands fa-instagram text-lg"></i> Follow Instagram Kami
                     </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cost Estimator Calculator Section -->
+    <section id="kalkulator" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="bg-gradient-to-br from-brand-card via-slate-900 to-brand-card rounded-3xl p-6 sm:p-10 border border-slate-700/60 shadow-2xl">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-brand-gold text-xs sm:text-sm font-extrabold uppercase tracking-wider">Simulasi Estimasi Biaya</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Hitung Estimasi Anggaran Proyek Anda
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Gunakan kalkulator interaktif ini untuk mendapatkan perkiraan kasar kebutuhan biaya pembuatan pintu kaca, kusen aluminium, atau kanopi baja ringan sebelum survei lokasi.
+                    </p>
+                    
+                    <div class="p-4 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-2">
+                        <p class="text-xs text-slate-400"><i class="fa-solid fa-circle-info text-brand-teal mr-1"></i> Catatan:</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Harga acuan di atas bersifat estimasi kasar awal. Harga pasti akan diberikan setelah tim CV. Partisi Kaca Jambi melakukan survei pengukuran langsung ke lokasi Anda (Gratis survei Kota Jambi).</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-slate-950/80 p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-5">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-300 mb-2">Pilih Jenis Pekerjaan:</label>
+                        <select id="calcType" class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3 focus:outline-none focus:border-brand-teal">
+                            <option value="pintu_tempered">Pintu Kaca Tempered (Frameless 10/12mm)</option>
+                            <option value="kusen_alum">Kusen Aluminium Minimalis (per meter lari)</option>
+                            <option value="jendela_alum">Jendela Aluminium Set (Kaca + Frame)</option>
+                            <option value="kanopi_baja">Kanopi Rangka Baja Light + Atap Alderon/Spandek</option>
+                            <option value="partisi_kaca">Partisi Kaca Ruangan Kantor / Toko</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-300 mb-2">Panjang / Lebar (m):</label>
+                            <input type="number" id="calcWidth" value="3" min="0.5" step="0.5" class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3 focus:outline-none focus:border-brand-teal">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-300 mb-2">Tinggi / Luas (m):</label>
+                            <input type="number" id="calcHeight" value="2.5" min="0.5" step="0.5" class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3 focus:outline-none focus:border-brand-teal">
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Perkiraan Range Biaya:</span>
+                            <span id="calcResult" class="text-2xl sm:text-3xl font-black text-brand-gold">Rp 2.500.000 - Rp 3.200.000</span>
+                        </div>
+                        <button onclick="sendCalcToWA()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 transition shrink-0">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Kirim Ke WA Untuk Survei
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="keunggulan" class="py-20 bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold text-sm font-bold uppercase tracking-wider">Komitmen Kualitas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+                    Alasan Memilih CV. Partisi Kaca Jambi
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-6 rounded-2xl bg-brand-card border border-slate-800 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-brand-gold flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Material Berstandar SNI</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Hanya memakai bahan Kaca Tempered resmi SNI dan profil aluminium bermerek tahan benturan & karat.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-card border border-slate-800 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-brand-teal/20 text-brand-teal flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Tenaga Ahli Berpengalaman</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Dikerjakan langsung oleh teknisi dan tukang ahli di bidang spesialis partisi kaca & aluminium bertahun-tahun.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-card border border-slate-800 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Garansi Pemasangan</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Jaminan pengerjaan rapi, kedap air, engsel presisi, serta garansi pasca pemasangan demi kepuasan Anda.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-card border border-slate-800 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Harga Bersaing & Cepat</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Penawaran transparan tanpa biaya tersembunyi dengan estimasi waktu pengerjaan yang tepat waktu.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-brand-teal text-sm font-bold uppercase tracking-wider">Pertanyaan Umum</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">Pertanyaan Sering Diajukan (FAQ)</h2>
+        </div>
+
+        <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="bg-brand-card border border-slate-800 rounded-2xl overflow-hidden">
+                <button onclick="toggleFAQ(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-white hover:text-brand-gold transition">
+                    <span>Apakah CV. Partisi Kaca Jambi melayani survei pengukuran lokasi?</span>
+                    <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="hidden p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 leading-relaxed">
+                    Ya, kami menyediakan layanan gratis survei pengukuran ke lokasi Anda untuk wilayah Kota Jambi dan sekitarnya setelah estimasi awal disetujui.
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-brand-card border border-slate-800 rounded-2xl overflow-hidden">
+                <button onclick="toggleFAQ(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-white hover:text-brand-gold transition">
+                    <span>Apa keunggulan Kaca Tempered untuk pintu dan partisi ruko/rumah?</span>
+                    <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="hidden p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 leading-relaxed">
+                    Kaca tempered memiliki kekuatan hingga 4-5 kali lipat dibanding kaca biasa. Jika terbentur keras hingga pecah, kaca tempered akan menjadi butiran tumpul yang aman dan tidak membahayakan.
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="bg-brand-card border border-slate-800 rounded-2xl overflow-hidden">
+                <button onclick="toggleFAQ(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-white hover:text-brand-gold transition">
+                    <span>Apakah melayani pengerjaan di luar Kota Jambi?</span>
+                    <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="hidden p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 leading-relaxed">
+                    Kami melayani pengerjaan untuk seluruh kabupaten/kota di Provinsi Jambi seperti Muaro Jambi, Batanghari, Tanjab Barat, Tanjab Timur, Bungo, Tebo, hingga Merangin.
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="bg-brand-card border border-slate-800 rounded-2xl overflow-hidden">
+                <button onclick="toggleFAQ(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-white hover:text-brand-gold transition">
+                    <span>Berapa lama proses pengerjaan pembuatan pintu/kusen aluminium?</span>
+                    <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="hidden p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 leading-relaxed">
+                    Waktu pembuatan berkisar antara 3 hingga 7 hari kerja tergantung pada volume unit, kerumitan bentuk, dan ketersediaan stok bahan custom.
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Price Estimator / Kalkulator -->
-    <section id="kalkulator" class="py-20 bg-slate-100">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-3xl shadow-xl p-6 sm:p-10 border border-slate-200">
-                <div class="text-center max-w-2xl mx-auto mb-10">
-                    <span class="px-3 py-1 bg-brand-100 text-brand-700 rounded-full text-xs font-bold uppercase tracking-wider">Simulasi Harga Proyek</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Kalkulator Estimasi Biaya</h2>
-                    <p class="text-slate-600 text-sm mt-2">
-                        Hitung perkiraan kebutuhan biaya awal untuk pekerjaan partisi kaca, kusen aluminium, atau kanopi Anda secara langsung.
+    <!-- Contact & Order Section -->
+    <section id="kontak" class="py-20 bg-slate-900/80 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Information -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-gold text-sm font-bold uppercase tracking-wider">Hubungi Kami</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Siap Mewujudkan Bangunan Impian Anda?
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Jangan ragu untuk berkonsultasi mengenai rencana pembuatan pintu kaca, jendela aluminium, kanopi, atau perbaikan partisi Anda. Tim kami siap membantu memberikan solusi terbaik!
                     </p>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Phone / WA -->
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-brand-card border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Nomor Pemesanan / WhatsApp</p>
+                                <a href="https://wa.me/6285344120212" target="_blank" class="text-lg font-bold text-white hover:text-emerald-400 transition">
+                                    +62 853-4412-0212
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- TikTok -->
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-brand-card border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 text-white flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">TikTok Resmi</p>
+                                <a href="https://www.tiktok.com/@partisikaca.jambi?_r=1&_t=ZS-99Z8cEwbHyG" target="_blank" rel="noopener" class="text-sm font-bold text-cyan-300 hover:underline break-all">
+                                    @partisikaca.jambi
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-brand-card border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Instagram Resmi</p>
+                                <a href="https://www.instagram.com/partisikaca.jambi?stkn=MTJ0cTdkNXVrMTNhcg==" target="_blank" rel="noopener" class="text-sm font-bold text-pink-300 hover:underline break-all">
+                                    @partisikaca.jambi
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-brand-card border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-brand-teal/20 text-brand-teal flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Wilayah Operasional</p>
+                                <p class="text-sm font-bold text-white">Kota Jambi & Seluruh Wilayah Provinsi Jambi</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <!-- Inputs -->
-                    <div class="space-y-4">
+                <!-- Direct WhatsApp Message Form -->
+                <div class="lg:col-span-6 bg-brand-card p-6 sm:p-8 rounded-3xl border border-slate-800 shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Formulir Pesan & Konsultasi</h3>
+                    <p class="text-xs text-slate-400 mb-6">Isi data di bawah untuk langsung mengirimkan detail ke WhatsApp Admin kami.</p>
+
+                    <form id="waForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 mb-1 uppercase">Pilih Layanan</label>
-                            <select id="calcType" onchange="calculateEstimate()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 text-sm font-semibold focus:ring-2 focus:ring-brand-500 focus:outline-none">
-                                <option value="850000">Partisi Kaca Tempered (Per m²)</option>
-                                <option value="180000">Kusen Aluminium 3 Inchi (Per meter lari)</option>
-                                <option value="220000">Kusen Aluminium 4 Inchi (Per meter lari)</option>
-                                <option value="350000">Kanopi Baja Ringan Atap Spandek (Per m²)</option>
-                                <option value="450000">Kanopi Baja Ringan Atap Alderon (Per m²)</option>
-                                <option value="650000">Pintu Kaca Swing/Floorhinge (Per Unit Estimasi)</option>
+                            <label class="block text-xs font-bold uppercase text-slate-300 mb-1">Nama Lengkap</label>
+                            <input type="text" id="formName" required placeholder="Contoh: Pak Budi" class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3 focus:outline-none focus:border-brand-gold">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-300 mb-1">Alamat / Lokasi Pemasangan</label>
+                            <input type="text" id="formAddress" required placeholder="Contoh: Mayang Mangurai, Kota Jambi" class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3 focus:outline-none focus:border-brand-gold">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-300 mb-1">Kebutuhan Proyek</label>
+                            <select id="formService" class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3 focus:outline-none focus:border-brand-gold">
+                                <option value="Pintu Kaca Tempered / Sliding">Pintu Kaca Tempered / Sliding</option>
+                                <option value="Kusen & Jendela Aluminium">Kusen & Jendela Aluminium</option>
+                                <option value="Kanopi & Rangka Baja Light">Kanopi & Rangka Baja Light</option>
+                                <option value="Partisi Kaca Ruangan Kantor / Toko">Partisi Kaca Ruangan Kantor / Toko</option>
+                                <option value="Shower Screen / Cermin Kaca">Shower Screen / Cermin Kaca</option>
+                                <option value="Servis & Perbaikan Kaca/Aluminium">Servis & Perbaikan Kaca/Aluminium</option>
                             </select>
                         </div>
 
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1 uppercase" id="labelDim1">Panjang / Lebar (m)</label>
-                                <input type="number" id="calcDim1" value="3" min="0.5" step="0.1" oninput="calculateEstimate()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 text-sm font-semibold focus:ring-2 focus:ring-brand-500 focus:outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1 uppercase" id="labelDim2">Tinggi / Kebutuhan (m)</label>
-                                <input type="number" id="calcDim2" value="2.5" min="0.5" step="0.1" oninput="calculateEstimate()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 text-sm font-semibold focus:ring-2 focus:ring-brand-500 focus:outline-none">
-                            </div>
-                        </div>
-
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 mb-1 uppercase">Jumlah Unit / Set</label>
-                            <input type="number" id="calcQty" value="1" min="1" oninput="calculateEstimate()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 text-sm font-semibold focus:ring-2 focus:ring-brand-500 focus:outline-none">
-                        </div>
-                    </div>
-
-                    <!-- Result Box -->
-                    <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-lg relative overflow-hidden">
-                        <div class="absolute -right-8 -bottom-8 text-slate-800 opacity-20 pointer-events-none">
-                            <i class="fa-solid fa-calculator text-9xl"></i>
+                            <label class="block text-xs font-bold uppercase text-slate-300 mb-1">Pesan / Ukuran (Opsional)</label>
+                            <textarea id="formMessage" rows="3" placeholder="Tuliskan catatan tambahan atau perkiraan ukuran..." class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3 focus:outline-none focus:border-brand-gold"></textarea>
                         </div>
 
-                        <div>
-                            <span class="text-xs uppercase tracking-wider text-cyan-400 font-bold block mb-1">Perkiraan Biaya Material & Pemasangan</span>
-                            <p class="text-xs text-slate-400 mb-4">*Belum termasuk diskon volume / penyesuaian lapangan</p>
-                            
-                            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-700 mb-4">
-                                <span class="text-xs text-slate-400 block">Total Estimasi Awal:</span>
-                                <div class="text-3xl sm:text-4xl font-extrabold text-cyan-300 mt-1" id="calcResult">
-                                    Rp 6.375.000
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3 mt-4">
-                            <p class="text-xs text-slate-300">
-                                <i class="fa-solid fa-circle-info text-amber-400 mr-1"></i>
-                                Penawaran pasti ditentukan dari hasil survei pengukuran gratis ke lokasi Anda.
-                            </p>
-                            <button onclick="sendEstimateToWA()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
-                                <i class="fa-brands fa-whatsapp text-xl"></i> Konsultasi Hasil Estimasi Ini
-                            </button>
-                        </div>
-                    </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-500 hover:to-green-400 text-white font-extrabold py-3.5 rounded-xl shadow-lg shadow-green-900/40 text-base flex items-center justify-center gap-2 transition transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Kirim Pesan Ke WhatsApp</span>
+                        </button>
+                    </form>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Keunggulan Section -->
-    <section id="keunggulan" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-5 space-y-6">
-                    <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Mengapa Memilih Kami</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
-                        Komitmen Kualitas & Presisi Kerja Terbaik di Jambi
-                    </h2>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        **CV. Partisi Kaca Jambi** hadir memberikan standar pengerjaan konstruksi kaca & aluminium terbaik dengan jaminan material original, garansi pemasangan, dan harga yang sangat bersaing.
-                    </p>
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 font-bold">1</div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-base">Survei & Pengukuran Gratis</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">Tim kami siap datang langsung ke lokasi Anda di wilayah Jambi untuk mengukur dan memberikan estimasi.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 font-bold">2</div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-base">Bahan Kaca & Aluminium SNI</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">Menggunakan merek ternama berkualitas tinggi yang kokoh, tahan cuaca, serta berumur panjang.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 font-bold">3</div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-base">Tenaga Ahli Berpengalaman</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">Dikerjakan oleh teknisi spesialis dengan ketelitian tinggi, sambungan rapi, dan sistem sealent yang kuat.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 font-bold">4</div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-base">Garansi Pemasangan & Maintenance</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">Jaminan pemeliharaan setelah pengerjaan selesai untuk kenyamanan dan keamanan Anda.</p>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-slate-800 text-slate-400 text-xs py-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            
+            <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                    <span class="font-black text-lg text-white">CV. PARTISI KACA <span class="text-brand-gold">JAMBI</span></span>
                 </div>
-
-                <div class="lg:col-span-7">
-                    <div class="relative">
-                        <div class="grid grid-cols-2 gap-4">
-                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" 
-                                 alt="Pengerjaan Aluminium Professional" 
-                                 class="rounded-2xl shadow-lg object-cover h-64 sm:h-80 w-full"
-                                 onerror="this.src='https://placehold.co/400x500/0f172a/ffffff?text=Teknisi+Profesional'">
-                            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80" 
-                                 alt="Pemasangan Konstruksi Kaca" 
-                                 class="rounded-2xl shadow-lg object-cover h-64 sm:h-80 w-full mt-8"
-                                 onerror="this.src='https://placehold.co/400x500/0f172a/ffffff?text=Konstruksi+Kaca'">
-                        </div>
-                        <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-6 py-4 rounded-2xl shadow-xl border border-slate-800 text-center w-11/12">
-                            <p class="text-xs text-brand-400 font-bold uppercase tracking-wider">Layanan Prima</p>
-                            <p class="text-sm font-semibold mt-0.5">Kepuasan Pelanggan Adalah Prioritas Utama Kami</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Coverage Area & Testimonials -->
-    <section class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Jangkauan Pengerjaan</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Wilayah Layanan CV. Partisi Kaca Jambi</h2>
-                <p class="text-slate-400 text-sm mt-3">
-                    Kami siap melayani kebutuhan pemasangan untuk area perumahan, perkantoran, pertokoan, dan proyek fasilitas umum di:
+                <p class="text-slate-400 leading-relaxed">
+                    Spesialis terbaik jasa perakitan dan pemasangan partisi kaca, pintu tempered, kusen alumunium, kanopi carport, dan rangka baja ringan terpercaya di Jambi.
                 </p>
             </div>
 
-            <!-- Area Badges -->
-            <div class="flex flex-wrap justify-center gap-3 mb-16 max-w-4xl mx-auto">
-                <span class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs sm:text-sm font-medium"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Kota Jambi</span>
-                <span class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs sm:text-sm font-medium"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Telanaipura</span>
-                <span class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs sm:text-sm font-medium"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Jambi Selatan</span>
-                <span class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs sm:text-sm font-medium"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Jambi Timur</span>
-                <span class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs sm:text-sm font-medium"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Kotabaru</span>
-                <span class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs sm:text-sm font-medium"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Muaro Jambi</span>
-                <span class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs sm:text-sm font-medium"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Batanghari</span>
-                <span class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs sm:text-sm font-medium"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Sipin & Sekitarnya</span>
+            <div>
+                <h4 class="font-bold text-white uppercase text-sm mb-3">Navigasi Cepat</h4>
+                <ul class="space-y-2">
+                    <li><a href="#beranda" class="hover:text-brand-gold transition">Beranda</a></li>
+                    <li><a href="#layanan" class="hover:text-brand-gold transition">Layanan Kaca & Aluminium</a></li>
+                    <li><a href="#galeri" class="hover:text-brand-gold transition">Galeri Foto Proyek</a></li>
+                    <li><a href="#kalkulator" class="hover:text-brand-gold transition">Kalkulator Estimasi Biaya</a></li>
+                    <li><a href="#kontak" class="hover:text-brand-gold transition">Kontak WA & Sosial Media</a></li>
+                </ul>
             </div>
 
-            <!-- Testimonials Grid -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/80 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 text-sm gap-1 mb-3">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed">
-                            "Pemasangan partisi kaca di kantor kami Telanaipura sangat rapi dan pengerjaannya cepat. Hasilnya persis seperti yang kami harapkan!"
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-700/80">
-                        <p class="font-bold text-white text-sm">Pak Hendra</p>
-                        <p class="text-xs text-slate-400">Pemilik Kantor Swasta - Jambi</p>
-                    </div>
+            <div>
+                <h4 class="font-bold text-white uppercase text-sm mb-3">Sosial Media Resmi</h4>
+                <div class="flex items-center gap-4 text-xl">
+                    <a href="https://www.tiktok.com/@partisikaca.jambi?_r=1&_t=ZS-99Z8cEwbHyG" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-black hover:text-white transition">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/partisikaca.jambi?stkn=MTJ0cTdkNXVrMTNhcg==" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/6285344120212" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
-
-                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/80 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 text-sm gap-1 mb-3">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed">
-                            "Pesan kanopi baja ringan plus pintu aluminium untuk ruko. Harganya bersaing, tukangnya berpengalaman & amanah. Mantap CV. Partisi Kaca!"
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-700/80">
-                        <p class="font-bold text-white text-sm">Ibu Rina</p>
-                        <p class="text-xs text-slate-400">Pemilik Usaha Ruko - Sipin</p>
-                    </div>
-                </div>
-
-                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/80 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 text-sm gap-1 mb-3">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed">
-                            "Respon pesan WA cepat, datang ukur lokasi tepat waktu. Hasil jendela aluminium casement presisi dan kedap suara."
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-700/80">
-                        <p class="font-bold text-white text-sm">Bpk. Agus Santoso</p>
-                        <p class="text-xs text-slate-400">Perumahan Kotabaru Jambi</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Kontak & Lokasi Section -->
-    <section id="kontak" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Hubungi Kami</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Pemesanan & Konsultasi Langsung</h2>
-                <div class="w-20 h-1.5 bg-brand-500 mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-600 text-sm mt-3">
-                    Siap melayani pertanyaan, jadwal survei lokasi, dan pemesanan proyek Anda.
+                <p class="mt-4 text-slate-400">
+                    Pemesanan Hotline: <span class="text-brand-gold font-bold">+62 853-4412-0212</span>
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-12 gap-8">
-                <!-- Direct Contact Cards -->
-                <div class="lg:col-span-5 space-y-6">
-                    
-                    <!-- Phone / WA Card -->
-                    <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 flex items-start gap-4">
-                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center shrink-0 text-xl font-bold">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Nomor Pemesanan & WA</h4>
-                            <p class="text-xl font-extrabold text-slate-900 mt-1">+62 853-4412-0212</p>
-                            <p class="text-xs text-slate-500 mt-1">Layanan Fast Response WhatsApp setiap hari.</p>
-                            <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20ingin%20bertanya..." target="_blank" rel="noopener" class="inline-flex items-center text-xs font-bold text-emerald-600 hover:text-emerald-700 mt-2">
-                                Chat WhatsApp Langsung <i class="fa-solid fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- TikTok Card -->
-                    <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 flex items-start gap-4">
-                        <div class="w-12 h-12 bg-slate-900 text-cyan-400 rounded-xl flex items-center justify-center shrink-0 text-xl font-bold">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">TikTok Resmi</h4>
-                            <p class="text-lg font-bold text-slate-900 mt-1">@partisikaca.jambi</p>
-                            <p class="text-xs text-slate-500 mt-1">Video pengerjaan & update proyek lapangan.</p>
-                            <a href="https://www.tiktok.com/@partisikaca.jambi?_r=1&_t=ZS-99Z8cEwbHyG" target="_blank" rel="noopener" class="inline-flex items-center text-xs font-bold text-slate-900 hover:text-brand-600 mt-2">
-                                Buka Aplikasi TikTok <i class="fa-solid fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Instagram Card -->
-                    <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 flex items-start gap-4">
-                        <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center shrink-0 text-xl font-bold">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Instagram Resmi</h4>
-                            <p class="text-lg font-bold text-slate-900 mt-1">@partisikaca.jambi</p>
-                            <p class="text-xs text-slate-500 mt-1">Portofolio foto pengerjaan & katalog produk.</p>
-                            <a href="https://www.instagram.com/partisikaca.jambi?stkn=MTJ0cTdkNXVrMTNhcg==" target="_blank" rel="noopener" class="inline-flex items-center text-xs font-bold text-pink-600 hover:text-pink-700 mt-2">
-                                Lihat Profil Instagram <i class="fa-solid fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Address Card -->
-                    <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 flex items-start gap-4">
-                        <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center shrink-0 text-xl font-bold">
-                            <i class="fa-solid fa-map-location-dot"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Lokasi Workshop / Operasional</h4>
-                            <p class="text-sm font-bold text-slate-900 mt-1">CV. Partisi Kaca Jambi</p>
-                            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Kota Jambi, Provinsi Jambi (Melayani seluruh wilayah Kota Jambi, Muaro Jambi, dan sekitarnya).</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Interactive Form Card -->
-                <div class="lg:col-span-7">
-                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-200 h-full flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-slate-900 mb-2">Kirim Pesan Pemesanan</h3>
-                            <p class="text-xs text-slate-500 mb-6">Isi formulir berikut untuk langsung tersambung dengan nomor WhatsApp admin kami dengan detail pesanan lengkap.</p>
-                            
-                            <form id="contactForm" onsubmit="handleMainFormSubmit(event)" class="space-y-4">
-                                <div class="grid sm:grid-cols-2 gap-4">
-                                    <div>
-                                        <label class="block text-xs font-bold text-slate-700 mb-1">Nama Pemesan *</label>
-                                        <input type="text" id="formName" required placeholder="Nama Anda" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
-                                    </div>
-                                    <div>
-                                        <label class="block text-xs font-bold text-slate-700 mb-1">Nomor Telepon / WA *</label>
-                                        <input type="tel" id="formPhone" required placeholder="08123456789" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
-                                    </div>
-                                </div>
-
-                                <div class="grid sm:grid-cols-2 gap-4">
-                                    <div>
-                                        <label class="block text-xs font-bold text-slate-700 mb-1">Layanan Yang Dibutuhkan</label>
-                                        <select id="formService" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
-                                            <option value="Partisi Kaca Tempered">Partisi Kaca Tempered</option>
-                                            <option value="Pintu Kaca Floorhinge/Sliding">Pintu Kaca (Floorhinge/Sliding)</option>
-                                            <option value="Jendela & Kusen Aluminium">Jendela & Kusen Aluminium</option>
-                                            <option value="Kanopi & Rangka Baja Ringan">Kanopi & Rangka Baja Ringan</option>
-                                            <option value="Fasad / Curtain Wall / ACP">Fasad / Curtain Wall / ACP</option>
-                                            <option value="Perbaikan & Maintenance">Perbaikan / Service Kaca</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label class="block text-xs font-bold text-slate-700 mb-1">Alamat / Lokasi Proyek</label>
-                                        <input type="text" id="formAddress" placeholder="Contoh: Jl. Pattimura No. 12 Jambi" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label class="block text-xs font-bold text-slate-700 mb-1">Catatan Ukuran / Keterangan Tambahan</label>
-                                    <textarea id="formMessage" rows="4" placeholder="Jelaskan perkiraan ukuran (misal: 3m x 2m) atau spesifikasi yang Anda inginkan..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500"></textarea>
-                                </div>
-
-                                <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
-                                    <i class="fa-brands fa-whatsapp text-xl"></i> Kirim Pesan Pemesanan via WA
-                                </button>
-                            </form>
-                        </div>
-
-                        <div class="mt-6 pt-4 border-t border-slate-100 text-center">
-                            <p class="text-xs text-slate-400">
-                                <i class="fa-solid fa-shield text-brand-500 mr-1"></i> Informasi Anda aman & hanya digunakan untuk keperluan komunikasi pemesanan.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
-                <!-- Brand Info -->
-                <div class="md:col-span-2 space-y-4">
-                    <div class="flex items-center space-x-3">
-                        <img src="logo.png" alt="CV. Partisi Kaca Jambi" class="h-10 w-auto object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('fallback-logo-footer').style.display='flex';">
-                        <div id="fallback-logo-footer" class="hidden w-10 h-10 rounded-xl bg-brand-600 items-center justify-center text-white">
-                            <i class="fa-solid fa-border-all text-xl"></i>
-                        </div>
-                        <span class="font-extrabold text-xl text-white tracking-tight">CV. PARTISI KACA JAMBI</span>
-                    </div>
-                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
-                        Penyedia jasa spesialis pembuatan partisi kaca, pintu aluminium, jendela kaca, kusen aluminium, rangka baja ringan, kanopi carport, dan fasad bangunan profesional di Kota Jambi.
-                    </p>
-                    <div class="flex space-x-3 text-lg pt-2">
-                        <a href="https://wa.me/6285344120212" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 hover:bg-emerald-600 hover:text-white transition">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@partisikaca.jambi?_r=1&_t=ZS-99Z8cEwbHyG" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 hover:bg-cyan-500 hover:text-white transition">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                        <a href="https://www.instagram.com/partisikaca.jambi?stkn=MTJ0cTdkNXVrMTNhcg==" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400 hover:bg-pink-600 hover:text-white transition">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Nav -->
-                <div>
-                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Navigasi</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#beranda" class="hover:text-cyan-400 transition">Beranda</a></li>
-                        <li><a href="#layanan" class="hover:text-cyan-400 transition">Layanan Pengerjaan</a></li>
-                        <li><a href="#galeri" class="hover:text-cyan-400 transition">Galeri Proyek</a></li>
-                        <li><a href="#kalkulator" class="hover:text-cyan-400 transition">Estimasi Biaya</a></li>
-                        <li><a href="#kontak" class="hover:text-cyan-400 transition">Kontak & Pemesanan</a></li>
-                    </ul>
-                </div>
-
-                <!-- Products -->
-                <div>
-                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Layanan Utama</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><span class="text-slate-400">Pintu Kaca Tempered</span></li>
-                        <li><span class="text-slate-400">Jendela & Kusen Aluminium</span></li>
-                        <li><span class="text-slate-400">Kanopi & Rangka Baja</span></li>
-                        <li><span class="text-slate-400">Partisi Kantor Frameless</span></li>
-                        <li><span class="text-slate-400">Service & Refitting Kaca</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Bottom Copyright -->
-            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-                <p>&copy; 2026 CV. Partisi Kaca Jambi. All rights reserved.</p>
-                <p class="flex items-center gap-1">
-                    Hubungi Pemesanan: <a href="tel:+6285344120212" class="text-brand-400 font-bold hover:underline">+62 853-4412-0212</a>
-                </p>
-            </div>
+        <div class="max-w-7xl mx-auto pt-6 border-t border-slate-800/60 text-center text-slate-400">
+            &copy; 2026 CV. PARTISI KACA JAMBI. Hak Cipta Dilindungi.
         </div>
     </footer>
 
-    <!-- Lightbox Preview Modal -->
-    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
-        <div class="relative max-w-4xl w-full">
-            <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white text-3xl hover:text-brand-400 transition">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <img id="lightboxImg" src="" alt="Preview Proyek" class="w-full max-h-[80vh] object-contain rounded-xl shadow-2xl">
-            <p id="lightboxCaption" class="text-center text-white text-sm font-semibold mt-4"></p>
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20ingin%20bertanya%20mengenai%20layanan" 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-400 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl transition duration-300 transform hover:scale-110 group"
+       title="Chat via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute right-16 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none border border-slate-700">
+            Chat WA +62 853-4412-0212
+        </span>
+    </a>
+
+    <!-- Lightbox Image Modal -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-brand-gold transition">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full text-center space-y-4">
+            <img id="lightboxImg" src="" alt="Preview Proyek" class="max-h-[80vh] mx-auto rounded-xl shadow-2xl border border-slate-700">
+            <h4 id="lightboxCaption" class="text-white font-bold text-lg"></h4>
+            <a id="lightboxWaBtn" href="#" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Tanya Proyek Ini di WhatsApp
+            </a>
         </div>
     </div>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/6285344120212?text=Halo%20CV.%20Partisi%20Kaca%20Jambi,%20saya%20ingin%20konsultasi%20mengenai%20pemasangan..." 
-       target="_blank" 
-       rel="noopener"
-       class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group"
-       title="Chat WhatsApp Direct">
-        <span class="absolute right-16 bg-slate-900 text-white text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap shadow-md pointer-events-none">
-            Chat WA +62 853-4412-0212
-        </span>
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-    </a>
-
     <script>
-        // Mobile Navigation Toggle
+        // Mobile Drawer Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileDrawer = document.getElementById('mobileDrawer');
         const menuIcon = document.getElementById('menuIcon');
 
         mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            if(mobileMenu.classList.contains('hidden')) {
+            mobileDrawer.classList.toggle('hidden');
+            if(mobileDrawer.classList.contains('hidden')) {
                 menuIcon.classList.remove('fa-xmark');
                 menuIcon.classList.add('fa-bars');
             } else {
@@ -925,131 +957,130 @@
             }
         });
 
-        // Close mobile drawer when clicking link
-        document.querySelectorAll('#mobileMenu a').forEach(link => {
+        document.querySelectorAll('.mobile-link').forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+                mobileDrawer.classList.add('hidden');
                 menuIcon.classList.remove('fa-xmark');
                 menuIcon.classList.add('fa-bars');
             });
         });
 
-        // Gallery Filter Logic
-        function filterGallery(category) {
-            const items = document.querySelectorAll('.gallery-item');
-            const buttons = document.querySelectorAll('#galleryFilters button');
+        // Gallery Filter Functionality
+        const filterBtns = document.querySelectorAll('.gallery-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
 
-            // Update button styles
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-brand-600', 'text-white');
-                btn.classList.add('bg-slate-800', 'text-slate-300');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-gold', 'text-slate-950', 'active');
+                    b.classList.add('bg-slate-800', 'text-slate-200');
+                });
+                btn.classList.remove('bg-slate-800', 'text-slate-200');
+                btn.classList.add('bg-brand-gold', 'text-slate-950', 'active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
             });
+        });
 
-            event.currentTarget.classList.remove('bg-slate-800', 'text-slate-300');
-            event.currentTarget.classList.add('bg-brand-600', 'text-white');
-
-            // Filter items
-            items.forEach(item => {
-                if (category === 'all' || item.classList.contains(category)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
         }
 
         // Lightbox Functions
-        function openLightbox(imgUrl, caption) {
-            const modal = document.getElementById('lightboxModal');
-            const lightboxImg = document.getElementById('lightboxImg');
-            const lightboxCaption = document.getElementById('lightboxCaption');
-
-            lightboxImg.src = imgUrl;
-            lightboxCaption.textContent = caption;
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.style.overflow = 'hidden';
+        function openLightbox(src, caption) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightboxCaption').innerText = caption;
+            const waMsg = encodeURIComponent("Halo CV. Partisi Kaca Jambi, saya berminat dengan proyek seperti di gambar: " + caption);
+            document.getElementById('lightboxWaBtn').href = "https://wa.me/6285344120212?text=" + waMsg;
+            document.getElementById('lightboxModal').classList.remove('hidden');
+            document.getElementById('lightboxModal').classList.add('flex');
         }
 
         function closeLightbox() {
-            const modal = document.getElementById('lightboxModal');
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
+            document.getElementById('lightboxModal').classList.add('hidden');
+            document.getElementById('lightboxModal').classList.remove('flex');
         }
 
-        // Close Lightbox when clicking outside image
-        document.getElementById('lightboxModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLightbox();
+        // Estimator Calculation Logic
+        const calcType = document.getElementById('calcType');
+        const calcWidth = document.getElementById('calcWidth');
+        const calcHeight = document.getElementById('calcHeight');
+        const calcResult = document.getElementById('calcResult');
+
+        function updateCalculation() {
+            const type = calcType.value;
+            const w = parseFloat(calcWidth.value) || 0;
+            const h = parseFloat(calcHeight.value) || 0;
+
+            let minPrice = 0;
+            let maxPrice = 0;
+
+            if (type === 'pintu_tempered') {
+                const area = Math.max(w * h, 1);
+                minPrice = area * 1100000 + 800000;
+                maxPrice = area * 1400000 + 1200000;
+            } else if (type === 'kusen_alum') {
+                const totalMeter = (w + h) * 2;
+                minPrice = totalMeter * 120000;
+                maxPrice = totalMeter * 180000;
+            } else if (type === 'jendela_alum') {
+                const area = Math.max(w * h, 1);
+                minPrice = area * 650000;
+                maxPrice = area * 950000;
+            } else if (type === 'kanopi_baja') {
+                const area = Math.max(w * h, 1);
+                minPrice = area * 350000;
+                maxPrice = area * 650000;
+            } else if (type === 'partisi_kaca') {
+                const area = Math.max(w * h, 1);
+                minPrice = area * 850000;
+                maxPrice = area * 1250000;
             }
-        });
 
-        // Price Estimator Logic
-        function calculateEstimate() {
-            const price = parseFloat(document.getElementById('calcType').value) || 0;
-            const dim1 = parseFloat(document.getElementById('calcDim1').value) || 0;
-            const dim2 = parseFloat(document.getElementById('calcDim2').value) || 0;
-            const qty = parseFloat(document.getElementById('calcQty').value) || 1;
+            const formatIDR = (num) => 'Rp ' + Math.round(num).toLocaleString('id-ID');
+            calcResult.innerText = `${formatIDR(minPrice)} - ${formatIDR(maxPrice)}`;
+        }
 
-            const total = price * dim1 * dim2 * qty;
+        calcType.addEventListener('change', updateCalculation);
+        calcWidth.addEventListener('input', updateCalculation);
+        calcHeight.addEventListener('input', updateCalculation);
+        updateCalculation();
+
+        function sendCalcToWA() {
+            const selectedText = calcType.options[calcType.selectedIndex].text;
+            const w = calcWidth.value;
+            const h = calcHeight.value;
+            const est = calcResult.innerText;
+
+            const text = `Halo CV. Partisi Kaca Jambi, saya ingin survei lokasi untuk:\n- *Pekerjaan:* ${selectedText}\n- *Ukuran/Dimensi:* ${w}m x ${h}m\n- *Estimasi Web:* ${est}\nMohon infokan jadwal survei lokasi. Terima kasih!`;
             
-            const formattedTotal = new Intl.NumberFormat('id-ID', { 
-                style: 'currency', 
-                currency: 'IDR',
-                maximumFractionDigits: 0
-            }).format(total);
-
-            document.getElementById('calcResult').textContent = formattedTotal;
+            window.open(`https://wa.me/6285344120212?text=${encodeURIComponent(text)}`, '_blank');
         }
 
-        function sendEstimateToWA() {
-            const serviceSelect = document.getElementById('calcType');
-            const serviceName = serviceSelect.options[serviceSelect.selectedIndex].text;
-            const dim1 = document.getElementById('calcDim1').value;
-            const dim2 = document.getElementById('calcDim2').value;
-            const qty = document.getElementById('calcQty').value;
-            const result = document.getElementById('calcResult').textContent;
-
-            const text = `Halo CV. Partisi Kaca Jambi, saya ingin bertanya hasil perkiraan dari simulasi website:%0A%0A- Jenis Layanan: ${encodeURIComponent(serviceName)}%0A- Ukuran: ${dim1}m x ${dim2}m%0A- Jumlah: ${qty} set/unit%0A- Estimasi Biaya Web: ${encodeURIComponent(result)}%0A%0AMohon info jadwal survei lokasi dan harga pasnya. Terima kasih!`;
-            
-            window.open(`https://wa.me/6285344120212?text=${text}`, '_blank');
-        }
-
-        // Quick Form Submit (Hero Section)
-        function handleQuickSubmit(e) {
-            e.preventDefault();
-            const name = document.getElementById('quickName').value;
-            const service = document.getElementById('quickService').value;
-            const location = document.getElementById('quickLocation').value;
-
-            const text = `Halo CV. Partisi Kaca Jambi, nama saya *${encodeURIComponent(name)}*.%0A%0ASaya ingin bertanya / survei lokasi untuk pekerjaan: *${encodeURIComponent(service)}*%0ALokasi proyek: *${encodeURIComponent(location)}*%0A%0AMohon informasi lebih lanjut. Terima kasih!`;
-
-            window.open(`https://wa.me/6285344120212?text=${text}`, '_blank');
-        }
-
-        // Main Contact Form Submit
-        function handleMainFormSubmit(e) {
-            e.preventDefault();
+        // WhatsApp Form Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
             const name = document.getElementById('formName').value;
-            const phone = document.getElementById('formPhone').value;
-            const service = document.getElementById('formService').value;
             const address = document.getElementById('formAddress').value;
+            const service = document.getElementById('formService').value;
             const message = document.getElementById('formMessage').value;
 
-            const text = `*FORM PEMESANAN WEBSITE - CV. PARTISI KACA JAMBI*%0A%0A` +
-                         `• *Nama Pemesan:* ${encodeURIComponent(name)}%0A` +
-                         `• *Nomor Kontak:* ${encodeURIComponent(phone)}%0A` +
-                         `• *Layanan:* ${encodeURIComponent(service)}%0A` +
-                         `• *Alamat Proyek:* ${encodeURIComponent(address)}%0A` +
-                         `• *Keterangan Ukuran / Catatan:* ${encodeURIComponent(message)}%0A%0A` +
-                         `Mohon diproses untuk penawaran dan jadwal survei lokasi. Terima kasih!`;
+            const text = `Halo Admin CV. Partisi Kaca Jambi,\n\nSaya ingin berkonsultasi:\n- *Nama:* ${name}\n- *Lokasi:* ${address}\n- *Layanan:* ${service}\n- *Catatan:* ${message || '-'}\n\nMohon direspon, terima kasih!`;
 
-            window.open(`https://wa.me/6285344120212?text=${text}`, '_blank');
+            window.open(`https://wa.me/6285344120212?text=${encodeURIComponent(text)}`, '_blank');
         }
-
-        // Initial Calc Run
-        calculateEstimate();
     </script>
 </body>
 </html>
